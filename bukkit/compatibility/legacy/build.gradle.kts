@@ -1,7 +1,6 @@
 repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
-    maven("https://repo.rapture.pw/repository/maven-releases/")
     maven("https://repo.momirealms.net/releases/")
     maven("https://repo.infernalsuite.com/repository/maven-snapshots/")
 }
@@ -9,7 +8,7 @@ repositories {
 dependencies {
     compileOnly(project(":core"))
     // NBT
-    compileOnly("net.momirealms:sparrow-nbt:${rootProject.properties["sparrow_nbt_version"]}")
+    compileOnly("net.momirealms:sparrow-nbt:0.10.9")
     // Platform
     compileOnly("io.papermc.paper:paper-api:${rootProject.properties["paper_version"]}-R0.1-SNAPSHOT")
     compileOnly("com.infernalsuite.aswm:api:1.20.4-R0.1-SNAPSHOT")
