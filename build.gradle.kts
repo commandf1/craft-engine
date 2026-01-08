@@ -5,7 +5,7 @@ plugins {
 val git : String = versionBanner()
 val builder : String = builder()
 ext["git_version"] = git
-ext["builder"] = builder
+ext["builder"] = "actions"
 
 subprojects {
 
@@ -39,8 +39,4 @@ subprojects {
 
 fun versionBanner(): String = project.providers.exec {
     commandLine("git", "rev-parse", "--short=8", "HEAD")
-}.standardOutput.asText.map { it.trim() }.getOrElse("Unknown")
-
-fun builder(): String = project.providers.exec {
-    commandLine("git", "config", "user.name")
 }.standardOutput.asText.map { it.trim() }.getOrElse("Unknown")
