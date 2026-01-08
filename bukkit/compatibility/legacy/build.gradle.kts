@@ -12,7 +12,7 @@ dependencies {
     compileOnly("net.momirealms:sparrow-nbt:0.10.9")
     // Platform
     compileOnly("io.papermc.paper:paper-api:${rootProject.properties["paper_version"]}-R0.1-SNAPSHOT")
-    compileOnly("com.infernalsuite.aswm:api:4.0.0-SNAPSHOT")
+    compileOnly("com.infernalsuite.aswm:api:3.0.0-SNAPSHOT")
 }
 
 java {
