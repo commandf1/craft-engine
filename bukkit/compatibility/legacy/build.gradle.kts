@@ -13,7 +13,6 @@ dependencies {
     // Platform
     compileOnly("io.papermc.paper:paper-api:${rootProject.properties["paper_version"]}-R0.1-SNAPSHOT")
     compileOnly("com.infernalsuite.aswm:api:4.0.0-SNAPSHOT")
-    compileOnly("com.flowpowered:flow-nbt:2.0.2")
 }
 
 java {
