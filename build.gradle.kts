@@ -3,7 +3,6 @@ plugins {
 }
 
 val git : String = versionBanner()
-val builder : String = builder()
 ext["git_version"] = git
 ext["builder"] = "actions"
 
