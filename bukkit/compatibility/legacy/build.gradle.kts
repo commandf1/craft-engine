@@ -4,6 +4,7 @@ repositories {
     maven("https://repo.momirealms.net/releases/")
     maven("https://repo.infernalsuite.com/repository/maven-snapshots/")
     maven("https://repo.infernalsuite.com/repository/maven-releases/")
+    maven("https://repo.titanvale.net/releases/")
 }
 
 dependencies {
